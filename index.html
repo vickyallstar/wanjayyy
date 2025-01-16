@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video id="loginBackgroundVideo" autoplay muted loop>
+        <source src="https://files.catbox.moe/7v7ea5.mp4" type="video/mp4">
+        Browser Anda tidak mendukung tag video.
+    </video>
+
+    <!-- Halaman Login -->
+    <div id="loginPage" class="login-container">
+        <h2>Login</h2>
+        <form action="" method="POST" id="loginForm">
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+
+        <div class="signup-link">
+            <p>Belum punya akun? <a href="https://wa.me/6285274582343?text=Kak%20saya%20ingin%20daftar%20akun" target="_blank">Buat sekarang</a></p>
+        </div>
+    </div>
+
+    <!-- Halaman Dashboard (Setelah Login) -->
+    <div id="dashboardPage" class="dashboard-container" style="display: none;">
+        <div id="dashboardHeader">
+            <h2>Welcome to Your Dashboard!</h2>
+        </div>
+
+        <!-- Gambar 16:9 -->
+        <div id="dashboardImage" class="dashboard-image">
+            <img src="https://files.catbox.moe/e29ziv.jpg" alt="Dashboard Image">
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <div class="button-container">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('gallery')">Gallery</button>
+        </div>
+
+        <!-- Konten Dinamis -->
+        <div id="pageContent" class="page-content">
+            <p>Silakan pilih ya cantikk.</p>
+        </div>
+        <!-- Bagian Konten Halaman Home -->
+    <!-- Teks dan Logo WhatsApp -->
+    <div id="whatsappSection" class="whatsapp-section">
+        <p>Jika ingin membuat web seperti ini atau yang lain, bisa klik logo WhatsApp:</p>
+        <a href="https://wa.me/6285274582343?text=Kak%20saya%20ingin%20membuat%20web" target="_blank" class="whatsapp-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+        </a>
+    </div>
+</div>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Pembuat Web: Vicky. Semua hak cipta dilindungi oleh kamu.</p>
+        </footer>
+    </div>
+
+    <<audio id="audio" autoplay loop>
+    <source src="" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+    <script src="script.js"></script>
+</body>
+</html>

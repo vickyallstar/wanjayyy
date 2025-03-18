@@ -98,7 +98,7 @@ function showPage(page) {
 // Data pengguna (simulasi database)
 const users = [
     { username: 'vicky', password: 'vicky' },
-    { username: '', password: '' },
+    { username: 'asem', password: 'asem' },
     { username: '', password: '' },
     { username: '', password: '' },
     { username: '', password: '' }
